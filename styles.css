@@ -329,96 +329,76 @@ footer{
 /* ==========================
    CARROSSEL
 ========================== */
+<section class="carrossel-section">
 
-.carrossel-section{
-    width:100%;
-    padding:40px 20px;
-    display:flex;
-    justify-content:center;
-}
+    <h2>📸 Imagens sobre Acessibilidade</h2>
 
-.carrossel{
-    width:100%;
-    max-width:1000px;
-    overflow:hidden;
-    position:relative;
-    margin:0 auto;
-    border-radius:12px;
-    box-shadow:0 5px 20px rgba(0,0,0,.2);
-}
+    <div class="carrossel">
 
-/* Esconde os inputs */
-.carrossel input{
-    display:none;
-}
+        <!-- Botões de controle -->
+        <input type="radio" name="slide" id="s1" checked>
+        <input type="radio" name="slide" id="s2">
+        <input type="radio" name="slide" id="s3">
 
-/* Área dos slides */
-.slides{
-    display:flex;
-    width:100%;
-    transition:transform .6s ease-in-out;
-}
+        <!-- Slides -->
+        <div class="slides">
 
-/* Cada slide ocupa 100% do carrossel */
-.slide{
-    min-width:100%;
-    flex:0 0 100%;
-}
+            <div class="slide s1">
+                <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1200&q=80" alt="Acessibilidade 1">
+            </div>
 
-/* Imagem */
-.slide img{
-    width:100%;
-    height:500px;
-    object-fit:cover;
-    display:block;
-}
+            <div class="slide s2">
+                <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1200&q=80" alt="Acessibilidade 2">
+            </div>
 
-/* Movimentação */
-#s1:checked ~ .slides{
-    transform:translateX(0);
-}
+            <div class="slide s3">
+                <img src="https://images.unsplash.com/photo-1576765607924-3f7b8410a787?auto=format&fit=crop&w=1200&q=80" alt="Acessibilidade 3">
+            </div>
 
-#s2:checked ~ .slides{
-    transform:translateX(-100%);
-}
+    <div class="carousel">
+    <div class="slides">
+        <div class="slide">
+            <img src="imagens/foto1.jpg" alt="">
+        </div>
 
-#s3:checked ~ .slides{
-    transform:translateX(-200%);
-}
+        <!-- Navegação -->
+        <div class="navegacao">
+            <label for="s1"></label>
+            <label for="s2"></label>
+            <label for="s3"></label>
+        <div class="slide">
+            <img src="imagens/foto2.jpg" alt="">
+        </div>
 
-/* Navegação */
-.navegacao{
-    position:absolute;
-    bottom:15px;
-    left:50%;
-    transform:translateX(-50%);
-    display:flex;
-    gap:10px;
-}
+        <div class="slide">
+            <img src="imagens/foto3.jpg" alt="">
+        </div>
+    </div>
 
-.navegacao label{
-    width:14px;
-    height:14px;
-    background:#fff;
-    border-radius:50%;
-    cursor:pointer;
-    opacity:.7;
-}
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+</div>
+</section>
 
-.navegacao label:hover{
-    opacity:1;
-}
+<section id="mobilidade">
 
-/* Responsivo */
-@media (max-width:768px){
-    .slide img{
-        height:350px;
-    }
-}
+    <h2>♿ Mobilidade Humana</h2>
 
-@media (max-width:480px){
-    .slide img{
-        height:220px;
-    }
-}
-}
+    <p>
+        A mobilidade humana está relacionada à capacidade de uma pessoa
+        se deslocar com autonomia e segurança. Pessoas com deficiência
+        física podem enfrentar obstáculos como calçadas inadequadas,
+        ausência de rampas, escadas e transporte público pouco acessível.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Rampas</h3>
+            <p>Facilitam o acesso de cadeirantes e pessoas com mobilidade reduzida.</p>
+        </div>
+
+        <div class="card">
+            <h3>Elevadores</h3>
+            <p>Garantem o acesso entre diferentes andares em prédios públicos e privados.</p>
+        </div>
