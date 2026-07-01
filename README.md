@@ -1,2 +1,2 @@
 # meu-ifa
-i school project
+a school project
