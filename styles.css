@@ -407,10 +407,10 @@ footer{
 }
 
 /* Responsivo */
-@media(max-width:300px){
+@media(max-width:250px){
 
     .slide img{
-        height:300px;
+        height:250px;
     }
 
 }
