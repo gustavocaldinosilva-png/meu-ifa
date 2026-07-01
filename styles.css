@@ -158,4 +158,145 @@ footer{
     .banner h1{
         font-size:35px;
     }
+/* Todo o seu CSS */
+
+@media(max-width:768px){
+
+    ...
+}
+
+#mapa{
+    text-align:center;
+}
+
+.mapa{
+    position:relative;
+    width:100%;
+    max-width:900px;
+    height:650px;
+    margin:auto;
+}
+
+.centro{
+
+    position:absolute;
+    top:45%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+    background:#1565c0;
+    color:white;
+    padding:20px 35px;
+    border-radius:12px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.caixa{
+
+    position:absolute;
+
+    width:240px;
+
+    background:white;
+
+    padding:18px;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+body.dark .caixa{
+    background:#2f2f2f;
+}
+
+.mobilidade{
+    top:40px;
+    left:40px;
+}
+
+.optica{
+    top:40px;
+    right:40px;
+}
+
+.tecnologia{
+    bottom:40px;
+    left:40px;
+}
+
+.objetivo{
+    bottom:40px;
+    right:40px;
+}
+
+.linha{
+    position:absolute;
+    background:#1565c0;
+}
+
+.linha1{
+    width:160px;
+    height:3px;
+    top:180px;
+    left:250px;
+    transform:rotate(25deg);
+}
+
+.linha2{
+    width:160px;
+    height:3px;
+    top:180px;
+    right:250px;
+    transform:rotate(-25deg);
+}
+
+.linha3{
+    width:160px;
+    height:3px;
+    bottom:180px;
+    left:250px;
+    transform:rotate(-25deg);
+}
+
+.linha4{
+    width:160px;
+    height:3px;
+    bottom:180px;
+    right:250px;
+    transform:rotate(25deg);
+}
+
+@media(max-width:900px){
+
+    .mapa{
+        height:auto;
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .centro,
+    .caixa,
+    .linha{
+
+        position:static;
+        transform:none;
+        width:100%;
+
+    }
+
+    .linha{
+        display:none;
+    }
+}
+
+#mapa{
+    ...
+}
+
+.mapa{
+    ...
 }
